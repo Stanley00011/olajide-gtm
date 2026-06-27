@@ -1,9 +1,14 @@
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
+import { Mermaid } from "@/components/mdx/Mermaid";
+import { Callout } from "@/components/mdx/Callout";
 
 /** Styles for MDX content (the /writing posts) - matches the site's design. */
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
+    // Custom components usable in any post without an import:
+    Mermaid,
+    Callout,
     h1: (props) => (
       <h1
         className="mt-2 font-display text-3xl font-semibold tracking-tight text-fg sm:text-4xl"

@@ -18,7 +18,24 @@ The job is to wire together the pieces of go-to-market into one observable pipel
 - **Deliverability.** The unglamorous infrastructure (dedicated domains, warmed inboxes, sending limits) that decides whether anyone sees the email at all.
 - **Reply handling.** Reading every response, sorting interest from noise, and routing the hot ones to a human in seconds, not days.
 
-Each of those is a system. The AI GTM engineer builds and connects them.
+Each of those is a system. The AI GTM engineer builds and connects them into one pipeline:
+
+<Mermaid
+  caption="A typical AI-engineered outbound pipeline."
+  chart={`flowchart LR
+  A[Define ICP] --> B[Source + enrich]
+  B --> C[Verify emails]
+  C --> D[AI personalize]
+  D --> E[Send from warmed inboxes]
+  E --> F{Reply?}
+  F -- interested --> G[Route to a human]
+  F -- not yet --> H[Nurture / re-sequence]`}
+/>
+
+<Callout>
+The point isn't the tools. It's that every stage is connected, measured, and
+mostly automated, so the team works qualified replies instead of spreadsheets.
+</Callout>
 
 ## Why this role is appearing now
 
