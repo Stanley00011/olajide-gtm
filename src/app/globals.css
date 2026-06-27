@@ -120,7 +120,7 @@ html.lenis body {
 }
 
 ::selection {
-  background: color-mix(in oklab, var(--accent) 30%, transparent);
+  background: color-mix(in srgb, var(--accent) 30%, transparent);
   color: var(--fg);
 }
 
@@ -149,20 +149,29 @@ html.lenis body {
 }
 
 @utility text-gradient {
+  /* Solid fallback first: if background-clip:text isn't honored, text stays visible. */
+  color: var(--accent);
   background: linear-gradient(
     100deg,
     var(--fg) 0%,
-    color-mix(in oklab, var(--accent) 70%, var(--fg)) 55%,
+    var(--accent) 55%,
     var(--accent-2) 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-  color: transparent;
+}
+
+/* Only blank the fill when the browser actually supports clipping text. */
+@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
+  .text-gradient {
+    -webkit-text-fill-color: currentColor;
+    background: none;
+  }
 }
 
 @utility glass {
-  background: color-mix(in oklab, var(--surface) 72%, transparent);
+  background: color-mix(in srgb, var(--surface) 72%, transparent);
   backdrop-filter: blur(14px) saturate(140%);
   -webkit-backdrop-filter: blur(14px) saturate(140%);
   border: 1px solid var(--border);
@@ -170,7 +179,7 @@ html.lenis body {
 
 @utility glow-ring {
   box-shadow:
-    0 0 0 1px color-mix(in oklab, var(--accent) 35%, transparent),
+    0 0 0 1px color-mix(in srgb, var(--accent) 35%, transparent),
     0 0 28px -6px rgb(var(--glow) / 0.5);
 }
 
