@@ -31,6 +31,7 @@ export function WorkflowMount({
   const reduced = useReducedMotion();
   const ref = useRef<HTMLDivElement>(null);
   const [inView, setInView] = useState(false);
+  const [narrow, setNarrow] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
@@ -48,10 +49,23 @@ export function WorkflowMount({
     return () => obs.disconnect();
   }, []);
 
+  // The interactive canvas crams on phones; show the static flow there instead.
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 767px)");
+    const update = () => setNarrow(mq.matches);
+    update();
+    mq.addEventListener("change", update);
+    return () => mq.removeEventListener("change", update);
+  }, []);
+
+  const useStatic = reduced || narrow;
+
   return (
     <div ref={ref} className={className}>
-      {reduced ? (
-        <StaticWorkflow nodes={nodes} />
+      {useStatic ? (
+        <div className="size-full overflow-y-auto">
+          <StaticWorkflow nodes={nodes} />
+        </div>
       ) : inView ? (
         <WorkflowCanvas nodes={nodes} edges={edges} interactive={interactive} />
       ) : (

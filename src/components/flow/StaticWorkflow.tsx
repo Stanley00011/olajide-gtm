@@ -5,7 +5,7 @@ import {
   GitBranch,
   Send,
   Sparkles,
-  ArrowRight,
+  ChevronDown,
   type LucideIcon,
 } from "lucide-react";
 import type { FlowNode } from "./workflows";
@@ -20,30 +20,54 @@ const icons: Record<PipelineNodeData["kind"], LucideIcon> = {
   data: Database,
 };
 
+const kindLabel: Record<PipelineNodeData["kind"], string> = {
+  trigger: "Trigger",
+  enrich: "Enrich",
+  agent: "AI Agent",
+  decision: "Decision",
+  outbound: "Outbound",
+  data: "Data",
+};
+
 /**
- * No-JS / reduced-motion / low-end fallback for the workflow canvas.
- * Renders the same nodes as an accessible, static horizontal flow — no
- * React Flow, no WebGL, no animation.
+ * No-JS / reduced-motion / small-screen fallback for the workflow canvas.
+ * A clean vertical flow of the same nodes — readable everywhere, no React
+ * Flow, no WebGL, no animation.
  */
 export function StaticWorkflow({ nodes }: { nodes: FlowNode[] }) {
-  // de-dupe to a clean linear narrative for the static view
-  const ordered = nodes.slice(0, 6);
+  const ordered = nodes.slice(0, 8);
   return (
-    <ul className="flex flex-wrap items-center justify-center gap-3 p-6">
+    <ul className="mx-auto flex max-w-sm flex-col gap-1 px-5 py-8">
       {ordered.map((n, i) => {
         const Icon = icons[n.data.kind];
         return (
-          <li key={n.id} className="flex items-center gap-3">
-            <div className="flex w-[150px] items-center gap-2.5 rounded-xl border border-border bg-surface px-3 py-2.5">
-              <span className="grid size-8 shrink-0 place-items-center rounded-lg border border-border-strong bg-bg-elev text-accent">
+          <li key={n.id} className="flex flex-col items-center">
+            <div
+              className={`flex w-full items-center gap-3 rounded-xl border px-4 py-3 ${
+                n.data.accent
+                  ? "border-[color-mix(in_oklab,var(--accent)_55%,transparent)] bg-surface"
+                  : "border-border bg-surface/70"
+              }`}
+            >
+              <span className="grid size-9 shrink-0 place-items-center rounded-lg border border-border-strong bg-bg-elev text-accent">
                 <Icon className="size-4" />
               </span>
-              <span className="truncate text-[13px] font-medium text-fg">
-                {n.data.label}
-              </span>
+              <div className="min-w-0">
+                <p className="font-mono text-[9px] uppercase tracking-[0.16em] text-fg-faint">
+                  {kindLabel[n.data.kind]}
+                </p>
+                <p className="truncate text-sm font-medium text-fg">
+                  {n.data.label}
+                </p>
+                {n.data.sublabel && (
+                  <p className="truncate text-xs text-fg-muted">
+                    {n.data.sublabel}
+                  </p>
+                )}
+              </div>
             </div>
             {i < ordered.length - 1 && (
-              <ArrowRight className="size-4 shrink-0 text-fg-faint" />
+              <ChevronDown className="my-1 size-4 text-fg-faint" aria-hidden />
             )}
           </li>
         );

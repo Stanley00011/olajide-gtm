@@ -82,14 +82,14 @@ export default function AutomationPage() {
       {/* Interactive canvas centerpiece */}
       <section className="container-page">
         <Reveal>
-          <div className="relative h-[460px] overflow-hidden rounded-[var(--radius)] border border-border bg-surface/30">
+          <div className="relative h-auto overflow-hidden rounded-[var(--radius)] border border-border bg-surface/30 md:h-[460px]">
             <WorkflowMount
               nodes={automationWorkflow.nodes}
               edges={automationWorkflow.edges}
               interactive
               className="size-full"
             />
-            <div className="pointer-events-none absolute bottom-3 left-4 font-mono text-[11px] text-fg-faint">
+            <div className="pointer-events-none absolute bottom-3 left-4 hidden font-mono text-[11px] text-fg-faint md:block">
               drag to explore · a representative pipeline shape
             </div>
           </div>

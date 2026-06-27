@@ -133,14 +133,14 @@ export default function GtmPage() {
           intro="This is the shape of an outbound engine. Every box is a step I build and connect — so nothing is left to a person remembering to do it."
         />
         <Reveal className="mt-12">
-          <div className="relative h-[460px] overflow-hidden rounded-[var(--radius)] border border-border bg-surface/30">
+          <div className="relative h-auto overflow-hidden rounded-[var(--radius)] border border-border bg-surface/30 md:h-[460px]">
             <WorkflowMount
               nodes={gtmWorkflow.nodes}
               edges={gtmWorkflow.edges}
               interactive
               className="size-full"
             />
-            <div className="pointer-events-none absolute bottom-3 left-4 font-mono text-[11px] text-fg-faint">
+            <div className="pointer-events-none absolute bottom-3 left-4 hidden font-mono text-[11px] text-fg-faint md:block">
               drag to explore the pipeline
             </div>
           </div>

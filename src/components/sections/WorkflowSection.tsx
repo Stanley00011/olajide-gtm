@@ -20,7 +20,7 @@ export function WorkflowSection() {
 
       <Reveal className="mt-12">
         <div className="container-page">
-          <div className="relative h-[420px] overflow-hidden rounded-[var(--radius)] border border-border bg-surface/30">
+          <div className="relative h-auto overflow-hidden rounded-[var(--radius)] border border-border bg-surface/30 md:h-[420px]">
             <WorkflowMount
               nodes={homeWorkflow.nodes}
               edges={homeWorkflow.edges}
