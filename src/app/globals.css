@@ -148,26 +148,10 @@ html.lenis body {
   padding-inline: 1.5rem;
 }
 
+/* Solid accent emphasis — always visible on every browser (no clipped-gradient,
+   which renders invisible on some mobile WebKit). Matches the hero treatment. */
 @utility text-gradient {
-  /* Solid fallback first: if background-clip:text isn't honored, text stays visible. */
   color: var(--accent);
-  background: linear-gradient(
-    100deg,
-    var(--fg) 0%,
-    var(--accent) 55%,
-    var(--accent-2) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-/* Only blank the fill when the browser actually supports clipping text. */
-@supports not ((-webkit-background-clip: text) or (background-clip: text)) {
-  .text-gradient {
-    -webkit-text-fill-color: currentColor;
-    background: none;
-  }
 }
 
 @utility glass {
