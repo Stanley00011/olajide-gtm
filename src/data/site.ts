@@ -21,7 +21,8 @@ export const site = {
   // The one-sentence story spine the whole site is built around.
   spine:
     "Data taught me to see the patterns. Now I build the AI systems that act on them.",
-  location: "Remote · Worldwide",
+  location: "Nigeria · Working worldwide",
+  country: "Nigeria",
   email: "stanleyajao123@gmail.com",
   url: SITE_URL,
   socials: {

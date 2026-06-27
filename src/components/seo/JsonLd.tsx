@@ -34,6 +34,9 @@ export function JsonLd() {
           "Data analytics",
         ],
         sameAs: [site.socials.github, site.socials.linkedin],
+        address: { "@type": "PostalAddress", addressCountry: "NG" },
+        homeLocation: { "@type": "Country", name: "Nigeria" },
+        nationality: { "@type": "Country", name: "Nigeria" },
       },
       {
         "@type": "WebSite",
@@ -48,7 +51,7 @@ export function JsonLd() {
         name: `${site.name} - AI GTM & Automation Engineering`,
         url: site.url,
         provider: { "@id": `${site.url}/#person` },
-        areaServed: "Worldwide",
+        areaServed: ["Nigeria", "Worldwide"],
         serviceType: [
           "AI automation & integration",
           "GTM engineering",

@@ -1,6 +1,6 @@
 # Olajide Ajao: AI GTM Engineer
 
-> Olajide Ajao is an AI GTM (go-to-market) engineer who builds AI automation and integration systems and engineers outbound/go-to-market infrastructure. He came from a data-analytics background (SQL, Python, Power BI, Tableau) and now designs end-to-end automations with n8n, Make.com, LLMs, Supabase, Trigger.dev and Smartlead.
+> Olajide Ajao is an AI GTM (go-to-market) engineer based in Nigeria, working with teams worldwide. He builds AI automation and integration systems and engineers outbound/go-to-market infrastructure. He came from a data-analytics background (SQL, Python, Power BI, Tableau) and now designs end-to-end automations with n8n, Make.com, LLMs, Supabase, Trigger.dev and Smartlead.
 
 ## What he does
 - AI automation & integration: connecting tools, orchestrating processes, and using LLMs for repetitive, judgement-light work.
@@ -27,4 +27,4 @@
 - LinkedIn: https://www.linkedin.com/in/olajide-ajao/
 
 ## Keywords
-AI GTM engineer, GTM engineer, GTM engineering, go-to-market engineer, AI automation, AI automation engineer, workflow automation, n8n developer, LLM automation, outbound automation, lead generation automation, go-to-market systems.
+AI GTM engineer, GTM engineer Nigeria, GTM engineer, GTM engineering, go-to-market engineer, AI automation, AI automation engineer, workflow automation, n8n developer, LLM automation, outbound automation, lead generation automation, go-to-market systems.
