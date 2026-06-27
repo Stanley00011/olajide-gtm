@@ -10,7 +10,7 @@ const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
   (process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-    : "https://olajide.dev");
+    : "https://olajide-gtm.vercel.app");
 
 export const site = {
   name: "Olajide Ajao",

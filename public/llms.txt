@@ -7,12 +7,12 @@
 - GTM engineering: sourcing, enrichment, AI personalization, deliverability, and reply handling, built as observable infrastructure.
 
 ## Key pages
-- Home: https://olajide.dev/
-- AI Automation & Integration: https://olajide.dev/automation
-- GTM Engineering: https://olajide.dev/gtm
-- Work (case studies & builds): https://olajide.dev/work
-- About: https://olajide.dev/about
-- Contact: https://olajide.dev/contact
+- Home: https://olajide-gtm.vercel.app/
+- AI Automation & Integration: https://olajide-gtm.vercel.app/automation
+- GTM Engineering: https://olajide-gtm.vercel.app/gtm
+- Work (case studies & builds): https://olajide-gtm.vercel.app/work
+- About: https://olajide-gtm.vercel.app/about
+- Contact: https://olajide-gtm.vercel.app/contact
 
 ## Selected work
 - AI Content Pipeline — one idea in, SEO-ready posts on every platform out (n8n, OpenAI, DALL·E, Airtable).
