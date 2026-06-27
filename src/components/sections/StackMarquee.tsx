@@ -1,6 +1,6 @@
 import { stack } from "@/data/site";
 
-/** Infinite tool marquee — pure CSS, duplicated track for seamless loop. */
+/** Infinite tool marquee - pure CSS, duplicated track for seamless loop. */
 export function StackMarquee() {
   const items = [...stack, ...stack];
   return (

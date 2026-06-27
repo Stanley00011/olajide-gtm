@@ -1,7 +1,7 @@
 import type { MDXComponents } from "mdx/types";
 import Link from "next/link";
 
-/** Styles for MDX content (the /writing posts) — matches the site's design. */
+/** Styles for MDX content (the /writing posts) - matches the site's design. */
 export function useMDXComponents(components: MDXComponents): MDXComponents {
   return {
     h1: (props) => (

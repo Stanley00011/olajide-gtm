@@ -36,7 +36,7 @@ const kindLabel: Record<PipelineNodeData["kind"], string> = {
   data: "Data",
 };
 
-/** A single glassy, glowing node in the workflow canvas — styled like n8n. */
+/** A single glassy, glowing node in the workflow canvas - styled like n8n. */
 export function PipelineNode({ data }: NodeProps & { data: PipelineNodeData }) {
   const Icon = icons[data.kind];
   return (

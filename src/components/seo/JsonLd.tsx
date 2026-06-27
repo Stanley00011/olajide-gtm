@@ -3,7 +3,7 @@ import { site } from "@/data/site";
 /**
  * Structured data so search engines AND LLMs can parse exactly who Olajide is,
  * what he does, and how to reach him. Three graphs: Person, WebSite, and the
- * service he offers — all keyed to the phrases people actually search.
+ * service he offers - all keyed to the phrases people actually search.
  */
 export function JsonLd() {
   const graph = {

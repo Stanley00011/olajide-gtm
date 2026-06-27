@@ -39,7 +39,7 @@ export function Nav() {
         <Link
           href="/"
           className="group flex items-center gap-2.5"
-          aria-label={`${site.name} — home`}
+          aria-label={`${site.name} - home`}
         >
           <span className="grid size-8 place-items-center rounded-lg border border-border-strong bg-surface font-display text-sm font-bold text-fg shadow-[inset_0_0_12px_-6px_rgb(var(--glow))]">
             {site.initials}

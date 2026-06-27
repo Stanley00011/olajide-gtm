@@ -2,7 +2,7 @@ import { cn } from "@/lib/utils";
 
 /**
  * Ambient backdrop: soft accent aurora blobs + a faint automation grid.
- * Pure CSS, cheap, theme-aware — the static base layer behind the 3D hero.
+ * Pure CSS, cheap, theme-aware - the static base layer behind the 3D hero.
  */
 export function Aurora({ className }: { className?: string }) {
   return (

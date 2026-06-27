@@ -148,7 +148,7 @@ html.lenis body {
   padding-inline: 1.5rem;
 }
 
-/* Solid accent emphasis — always visible on every browser (no clipped-gradient,
+/* Solid accent emphasis - always visible on every browser (no clipped-gradient,
    which renders invisible on some mobile WebKit). Matches the hero treatment. */
 @utility text-gradient {
   color: var(--accent);

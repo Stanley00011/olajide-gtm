@@ -6,8 +6,8 @@ import { Float, Points, PointMaterial } from "@react-three/drei";
 import * as THREE from "three";
 
 /**
- * Signature 3D motif: a slowly rotating node-constellation — points (nodes)
- * connected by faint lines (edges) — echoing the automation-graph theme.
+ * Signature 3D motif: a slowly rotating node-constellation - points (nodes)
+ * connected by faint lines (edges) - echoing the automation-graph theme.
  * Client + WebGL only; mounted exclusively via HeroSceneMount after gating.
  */
 

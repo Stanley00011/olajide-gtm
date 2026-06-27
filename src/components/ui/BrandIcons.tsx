@@ -1,6 +1,6 @@
 import type { SVGProps } from "react";
 
-/** Brand glyphs — lucide-react dropped these, so we inline them. */
+/** Brand glyphs - lucide-react dropped these, so we inline them. */
 
 export function GithubIcon(props: SVGProps<SVGSVGElement>) {
   return (

@@ -31,7 +31,7 @@ const kindLabel: Record<PipelineNodeData["kind"], string> = {
 
 /**
  * No-JS / reduced-motion / small-screen fallback for the workflow canvas.
- * A clean vertical flow of the same nodes — readable everywhere, no React
+ * A clean vertical flow of the same nodes - readable everywhere, no React
  * Flow, no WebGL, no animation.
  */
 export function StaticWorkflow({ nodes }: { nodes: FlowNode[] }) {

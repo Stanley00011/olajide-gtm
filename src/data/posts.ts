@@ -1,6 +1,6 @@
 /**
  * Writing index registry. Add an entry here when you add a new post at
- * src/app/writing/<slug>/page.mdx — newest first.
+ * src/app/writing/<slug>/page.mdx - newest first.
  */
 export type Post = {
   slug: string;

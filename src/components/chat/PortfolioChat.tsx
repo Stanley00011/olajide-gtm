@@ -156,7 +156,7 @@ export function PortfolioChat() {
               {messages.length === 0 && (
                 <div>
                   <p className="text-sm leading-relaxed text-fg-muted">
-                    Hi — I&apos;m {site.shortName}&apos;s portfolio assistant. Ask me
+                    Hi, I&apos;m {site.shortName}&apos;s portfolio assistant. Ask me
                     about his automation and GTM systems, how he works, or whether
                     he&apos;s available.
                   </p>
