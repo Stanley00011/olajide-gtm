@@ -13,13 +13,40 @@ export type Post = {
 
 export const posts: Post[] = [
   {
+    slug: "anatomy-of-an-ai-outbound-engine",
+    title: "The Anatomy of an AI Outbound Engine",
+    description:
+      "A stage-by-stage breakdown of the system that turns a description of your buyer into booked conversations, and where AI actually fits.",
+    date: "2026-06-27",
+    readingMins: 6,
+    tags: ["Outbound", "GTM systems", "AI"],
+  },
+  {
     slug: "what-is-an-ai-gtm-engineer",
     title: "What is an AI GTM Engineer?",
     description:
       "A plain-language definition of the AI GTM engineer role, what they build, and why go-to-market is becoming an engineering discipline.",
-    date: "2026-06-27",
+    date: "2026-06-24",
     readingMins: 5,
     tags: ["AI GTM", "Go-to-market", "Automation"],
+  },
+  {
+    slug: "how-to-land-in-the-inbox",
+    title: "How to Actually Land in the Inbox",
+    description:
+      "Deliverability, explained plainly: why great cold emails still die in spam, and the setup that keeps you in the inbox.",
+    date: "2026-06-19",
+    readingMins: 6,
+    tags: ["Deliverability", "Outbound", "Email"],
+  },
+  {
+    slug: "n8n-vs-make-for-gtm",
+    title: "n8n vs Make for GTM Automation",
+    description:
+      "A practical take on choosing your automation backbone for go-to-market work, and when each one is the right call.",
+    date: "2026-06-13",
+    readingMins: 7,
+    tags: ["Automation", "n8n", "Tooling"],
   },
 ];
 

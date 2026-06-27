@@ -1,0 +1,41 @@
+You can write the best cold email in the world, and it can still earn nothing, because it never reached a human. Deliverability is the invisible layer that decides whether your message lands in the inbox or dies in spam. Most outbound fails here, quietly, and the sender never knows why.
+
+Here's the setup that keeps you landing.
+
+<Mermaid
+  caption="The deliverability stack that keeps cold email in the inbox."
+  chart={`flowchart TD
+  A[Dedicated sending domains] --> B[SPF + DKIM + DMARC]
+  B --> C[Warm up each mailbox]
+  C --> D[Spread volume across inboxes]
+  D --> E[Send at a human pace]
+  E --> F[Monitor health: bounces, spam, replies]
+  F -. rotate out trouble .-> D`}
+/>
+
+## Protect your real domain
+
+Outreach never goes out on your primary company domain. You use dedicated domains, so if anything goes wrong, your real email reputation stays untouched.
+
+## Prove you are who you say
+
+SPF, DKIM, and DMARC are the records that tell inbox providers the mail is genuinely from you. Without them, you look like a spoofer, and you get treated like one.
+
+## Warm up before you scale
+
+A brand-new mailbox that suddenly sends hundreds of emails looks exactly like a spammer. Warm-up builds a sending reputation gradually, so volume later doesn't trip alarms.
+
+## Spread and pace the sending
+
+Volume is split across a pool of inboxes and sent at a human rhythm. No single mailbox does anything that looks automated or aggressive.
+
+## Watch the health, fix early
+
+Bounce rates, spam placement, and mailbox health are monitored continuously. Trouble gets caught and rotated out before it drags down the whole campaign.
+
+<Callout>
+Deliverability is invisible until it's the only thing that matters. Get it
+right and everything else you built finally has a chance to work.
+</Callout>
+
+None of this is glamorous. It's also the difference between outbound that works and outbound that silently doesn't.

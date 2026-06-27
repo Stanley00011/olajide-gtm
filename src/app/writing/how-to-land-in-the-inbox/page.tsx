@@ -1,7 +1,7 @@
 import { PostLayout, postMeta } from "@/components/writing/PostLayout";
 import Content from "./content.mdx";
 
-const slug = "what-is-an-ai-gtm-engineer";
+const slug = "how-to-land-in-the-inbox";
 export const metadata = postMeta(slug);
 
 export default function Page() {

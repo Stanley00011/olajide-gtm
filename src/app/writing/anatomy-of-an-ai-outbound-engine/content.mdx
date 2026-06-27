@@ -1,0 +1,44 @@
+Every outbound engine, good or bad, has the same skeleton. The difference between one that books meetings and one that burns your domain isn't the tools, it's whether the stages are actually connected and where AI does the work. Here's the whole thing, stage by stage.
+
+<Mermaid
+  caption="The six stages of an AI-engineered outbound engine, with a feedback loop."
+  chart={`flowchart TD
+  A[1. Target: define ICP + signals] --> B[2. Enrich + verify contacts]
+  B --> C[3. AI personalize per lead]
+  C --> D[4. Deliver from warmed inboxes]
+  D --> E[5. Triage replies with AI]
+  E --> F[6. Measure every stage]
+  F -. learnings .-> A`}
+/>
+
+## 1. Target
+
+Everything downstream inherits the quality of this step. The job is to turn a fuzzy "our ideal customer" into something a machine can go find: industry, size, role, and ideally a *signal* that the account is in-market right now (hiring for a role, running ads, adopting a tool). Reaching the right 500 beats blasting a random 50,000, every time.
+
+## 2. Enrich and verify
+
+Raw lists are full of dead ends. Each contact gets enriched (the missing details that make a message land) and every email is verified before it's used. Skip this and you torch your sender reputation before the copy even matters.
+
+## 3. Personalize
+
+This is where AI earns its place. Instead of a generic `Hi {firstName}`, each message is written from a real, specific detail about that person or company, the kind of line that makes someone think "this wasn't a blast." One-to-one quality, at machine scale.
+
+## 4. Deliver
+
+The best email in the world earns nothing from the spam folder. Sending happens across a pool of warmed inboxes on dedicated domains, at a human pace, so you land where people actually read.
+
+## 5. Handle replies
+
+When it works, replies arrive faster than anyone can keep up. An AI layer reads each one, sorts interested from not, and routes the hot ones to a human in seconds, so momentum never leaks.
+
+## 6. Measure and improve
+
+Every stage is instrumented. When numbers dip, you see exactly where (targeting? copy? deliverability?) and fix the cause, not the symptom. The learnings feed back into targeting, and the engine sharpens itself.
+
+<Callout>
+Most teams bolt these stages together by hand and wonder why outbound "doesn't
+work." Engineered as one connected system, the same stages compound instead of
+leaking.
+</Callout>
+
+That's the anatomy. The craft is in the connections and the judgement of where a human still belongs in the loop.

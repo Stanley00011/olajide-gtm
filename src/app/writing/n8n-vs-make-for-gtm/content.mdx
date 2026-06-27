@@ -1,0 +1,35 @@
+If you're automating go-to-market work, the first real decision is your backbone: the tool everything else plugs into. n8n and Make (formerly Integromat) are both excellent, and the "best" one depends less on features than on how you want to work. Here's how I actually choose.
+
+<Mermaid
+  caption="A quick way to choose your automation backbone."
+  chart={`flowchart TD
+  A{Need full control + self-hosting?} -- yes --> N[n8n]
+  A -- no --> B{Comfort with light code/logic?}
+  B -- yes --> N
+  B -- no --> M[Make]
+  N --> C[Best for complex, custom GTM systems]
+  M --> D[Best for fast, visual, no-code builds]`}
+/>
+
+## What they share
+
+Both let you connect apps, move data, and run multi-step automations on a visual canvas, with branching, error handling, and scheduling. For most GTM workflows, either one can get the job done.
+
+## When I reach for n8n
+
+n8n shines when the system is **complex, custom, or sensitive**. You can self-host it (so data never leaves your infrastructure), drop into code nodes when logic gets gnarly, and version-control the whole thing. For an outbound engine with custom enrichment, AI steps, and tight cost control, n8n is usually my backbone.
+
+## When I reach for Make
+
+Make is the faster path when you want **visual, no-code speed** and a huge library of ready-made app connectors. If the goal is to ship a clean, maintainable automation quickly and the logic is moderate, Make is a great fit, especially for teams who'll maintain it without an engineer.
+
+## The honest answer
+
+For a one-off integration or a non-technical team, Make. For a GTM system that needs to scale, stay private, and bend to custom logic, n8n. Plenty of stacks even use both.
+
+<Callout>
+Pick the backbone for the system you're actually building, not the one with the
+prettier landing page. The wrong backbone shows up as pain six months in.
+</Callout>
+
+Whatever you choose, the value isn't the tool, it's the system you design on top of it.
