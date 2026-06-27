@@ -8,6 +8,7 @@ import { Nav } from "@/components/layout/Nav";
 import { Footer } from "@/components/layout/Footer";
 import { IntroLoader } from "@/components/intro/IntroLoader";
 import { JsonLd } from "@/components/seo/JsonLd";
+import { PortfolioChat } from "@/components/chat/PortfolioChat";
 
 const sans = Inter({
   variable: "--font-sans",
@@ -93,6 +94,7 @@ export default function RootLayout({
             <Nav />
             <main id="main">{children}</main>
             <Footer />
+            <PortfolioChat />
           </SmoothScroll>
         </ThemeProvider>
       </body>

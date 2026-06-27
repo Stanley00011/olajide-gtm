@@ -23,9 +23,9 @@ const timeline = [
     body: "The bottleneck was rarely the analysis, it was the manual work after it. So I learned to build the systems that act on the insight, not just surface it.",
   },
   {
-    year: "Automation program",
-    title: "A scrappy Notion site got me the job",
-    body: "During an intensive automation program I built a simple (and, honestly, ugly) Notion portfolio. It worked because the systems behind it were real. Substance over polish.",
+    year: "The deep dive",
+    title: "Going all-in on automation",
+    body: "I went deep through an intensive automation program, building real, end-to-end systems instead of toy demos. That's where 'the analyst who spots the problem' became 'the engineer who ships the fix.'",
   },
   {
     year: "Now",
