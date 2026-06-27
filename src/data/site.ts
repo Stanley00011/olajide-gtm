@@ -21,7 +21,9 @@ export const site = {
   // The one-sentence story spine the whole site is built around.
   spine:
     "Data taught me to see the patterns. Now I build the AI systems that act on them.",
-  location: "Nigeria · Working worldwide",
+  location: "Remote · Working worldwide",
+  // Used for geo-discoverability signals (structured data / metadata), not as a
+  // headline identity. Keeps the brand global while staying findable locally.
   country: "Nigeria",
   email: "stanleyajao123@gmail.com",
   url: SITE_URL,

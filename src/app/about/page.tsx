@@ -45,7 +45,7 @@ export default function AboutPage() {
             <span className="text-gradient">effort into output</span>.
           </>
         }
-        intro="An AI GTM engineer based in Nigeria, working with teams worldwide. I came up through data, and I care about systems that are simple to use, reliable under load, and honest about where a human still belongs in the loop."
+        intro="An AI GTM engineer who came up through data. I care about systems that are simple to use, reliable under load, and honest about where a human still belongs in the loop."
       />
 
       <section className="container-page grid gap-12 pb-8 lg:grid-cols-[1.4fr_1fr]">

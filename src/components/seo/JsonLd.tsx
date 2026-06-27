@@ -36,7 +36,6 @@ export function JsonLd() {
         sameAs: [site.socials.github, site.socials.linkedin],
         address: { "@type": "PostalAddress", addressCountry: "NG" },
         homeLocation: { "@type": "Country", name: "Nigeria" },
-        nationality: { "@type": "Country", name: "Nigeria" },
       },
       {
         "@type": "WebSite",
