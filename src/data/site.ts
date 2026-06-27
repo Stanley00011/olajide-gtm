@@ -35,6 +35,7 @@ export const nav: { label: string; href: string }[] = [
   { label: "Automation", href: "/automation" },
   { label: "GTM", href: "/gtm" },
   { label: "Work", href: "/work" },
+  { label: "Writing", href: "/writing" },
   { label: "About", href: "/about" },
   { label: "Contact", href: "/contact" },
 ];

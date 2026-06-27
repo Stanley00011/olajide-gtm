@@ -8,11 +8,15 @@ import { useDeviceTier } from "@/hooks/useDeviceTier";
 
 // ssr:false is legal here because this file is a Client Component.
 const HeroScene = dynamic(() => import("./HeroScene"), { ssr: false });
+const CanvasConstellation = dynamic(() => import("./CanvasConstellation"), {
+  ssr: false,
+});
 
 /**
- * Decides whether the WebGL hero is worth mounting, and only mounts it once
- * it's on screen. Falls back to the CSS Aurora (already behind it) otherwise,
- * so there's always a graceful, performant base layer.
+ * Renders the animated node-network behind the hero on every device:
+ *  - capable desktop (not reduced-motion) → full WebGL 3D scene
+ *  - everything else (mobile, low-end, reduced-motion) → lightweight 2D canvas
+ * Only mounts once in view.
  */
 export function HeroSceneMount() {
   const reduced = useReducedMotion();
@@ -32,8 +36,8 @@ export function HeroSceneMount() {
     return () => obs.disconnect();
   }, []);
 
-  const enabled = !reduced && tier === "high";
-  const color = resolvedTheme === "light" ? "#0aa2c0" : "#38e1ff";
+  const use3D = !reduced && tier === "high";
+  const color = resolvedTheme === "light" ? "#0aa2c0" : "#3ee6ff";
 
   return (
     <div
@@ -41,7 +45,7 @@ export function HeroSceneMount() {
       aria-hidden
       className="pointer-events-none absolute inset-0 z-0 opacity-80 [mask-image:radial-gradient(ellipse_at_60%_40%,black_25%,transparent_72%)]"
     >
-      {enabled && inView && <HeroScene color={color} />}
+      {inView && (use3D ? <HeroScene color={color} /> : <CanvasConstellation />)}
     </div>
   );
 }

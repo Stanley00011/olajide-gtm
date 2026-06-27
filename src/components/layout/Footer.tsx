@@ -67,7 +67,7 @@ export function Footer() {
 
         <div className="mt-14 flex flex-col gap-2 border-t border-border pt-6 text-xs text-fg-faint sm:flex-row sm:items-center sm:justify-between">
           <p>
-            © {new Date().getFullYear()} {site.name}. Built from scratch.
+            © {new Date().getFullYear()} {site.name}.
           </p>
           <p className="font-mono">{site.location}</p>
         </div>
