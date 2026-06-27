@@ -1,5 +1,17 @@
 /** Global site/profile config — single source of truth for identity + nav. */
 
+/**
+ * Canonical site URL. Resolves automatically:
+ *  1. NEXT_PUBLIC_SITE_URL (set this in Vercel once you have a custom domain)
+ *  2. Vercel's production URL (auto-set on Vercel — correct on the *.vercel.app deploy)
+ *  3. local fallback
+ */
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_PROJECT_PRODUCTION_URL
+    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+    : "https://olajide.dev");
+
 export const site = {
   name: "Olajide Ajao",
   shortName: "Olajide",
@@ -11,7 +23,7 @@ export const site = {
     "Data taught me to see the patterns. Now I build the AI systems that act on them.",
   location: "Remote · Worldwide",
   email: "stanleyajao123@gmail.com",
-  url: "https://olajide.dev",
+  url: SITE_URL,
   socials: {
     github: "https://github.com/Stanley00011",
     linkedin: "https://www.linkedin.com/in/olajide-ajao/",
