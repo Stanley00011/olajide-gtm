@@ -7,6 +7,7 @@ import { ProjectCard } from "@/components/ui/ProjectCard";
 import { gtmProjects } from "@/data/projects";
 import { WorkflowMount } from "@/components/flow/WorkflowMount";
 import { gtmWorkflow } from "@/components/flow/workflows";
+import { FAQ } from "@/components/sections/FAQ";
 import { CTA } from "@/components/sections/CTA";
 
 export const metadata: Metadata = {
@@ -220,6 +221,8 @@ export default function GtmPage() {
           ))}
         </div>
       </section>
+
+      <FAQ />
 
       <CTA />
     </>

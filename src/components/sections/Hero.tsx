@@ -70,6 +70,15 @@ export function Hero() {
             Selected work
           </Button>
         </motion.div>
+
+        <motion.p
+          initial={reduced ? false : { opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.6, delay: 0.85 }}
+          className="mt-6 font-mono text-xs text-fg-faint"
+        >
+          Real, working systems, with demos you can watch.
+        </motion.p>
       </div>
 
       <motion.div

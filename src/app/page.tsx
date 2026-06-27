@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import { Hero } from "@/components/sections/Hero";
 import { StackMarquee } from "@/components/sections/StackMarquee";
+import { ProofStrip } from "@/components/sections/ProofStrip";
 import { Journey } from "@/components/sections/Journey";
 import { TwinPillars } from "@/components/sections/TwinPillars";
 import { WorkflowSection } from "@/components/sections/WorkflowSection";
 import { FeaturedWork } from "@/components/sections/FeaturedWork";
+import { FAQ } from "@/components/sections/FAQ";
 import { CTA } from "@/components/sections/CTA";
 
 export const metadata: Metadata = {
@@ -16,10 +18,12 @@ export default function Home() {
     <>
       <Hero />
       <StackMarquee />
+      <ProofStrip />
       <Journey />
       <TwinPillars />
       <WorkflowSection />
       <FeaturedWork />
+      <FAQ />
       <CTA />
     </>
   );
