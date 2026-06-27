@@ -7,8 +7,6 @@ import { Aurora } from "@/components/ui/Aurora";
 import { Button } from "@/components/ui/Button";
 import { HeroSceneMount } from "@/components/three/HeroSceneMount";
 
-const words = site.tagline.split(" ");
-
 export function Hero() {
   const reduced = useReducedMotion();
 
@@ -28,20 +26,26 @@ export function Hero() {
           {site.role}
         </motion.p>
 
+        {/* Headline uses solid colors (no clipped-gradient) and only transforms
+            on entrance, so the text is always opaque regardless of browser/JS. */}
         <h1 className="mt-7 max-w-4xl font-display text-4xl font-semibold leading-[1.05] tracking-tight sm:text-6xl md:text-7xl">
-          <span className="block overflow-hidden">
-            <motion.span
-              initial={reduced ? false : { y: "110%" }}
-              animate={{ y: 0 }}
-              transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-              className="block text-fg"
-            >
-              I&apos;m {site.shortName}.
-            </motion.span>
-          </span>
-          <span className="mt-1 block">
-            <span className="text-gradient">{flow(words, reduced)}</span>
-          </span>
+          <motion.span
+            initial={reduced ? false : { y: 20 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.7, ease: [0.22, 1, 0.36, 1] }}
+            className="block text-fg"
+          >
+            I&apos;m {site.shortName}.
+          </motion.span>
+          <motion.span
+            initial={reduced ? false : { y: 20 }}
+            animate={{ y: 0 }}
+            transition={{ duration: 0.7, delay: 0.12, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-1 block text-fg"
+          >
+            I engineer AI systems that turn{" "}
+            <span className="text-accent">go-to-market motion into revenue.</span>
+          </motion.span>
         </h1>
 
         <motion.p
@@ -81,19 +85,4 @@ export function Hero() {
       </motion.div>
     </section>
   );
-}
-
-/** Render the tagline word-by-word with a subtle stagger. */
-function flow(parts: string[], reduced: boolean | null) {
-  return parts.map((w, i) => (
-    <motion.span
-      key={`${w}-${i}`}
-      initial={reduced ? false : { opacity: 0, y: 14 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.5, delay: 0.3 + i * 0.05 }}
-      className="inline-block"
-    >
-      {w}&nbsp;
-    </motion.span>
-  ));
 }
