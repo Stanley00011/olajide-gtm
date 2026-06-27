@@ -1,0 +1,30 @@
+# Olajide Ajao — AI GTM Engineer
+
+> Olajide Ajao is an AI GTM (go-to-market) engineer who builds AI automation and integration systems and engineers outbound/go-to-market infrastructure. He came from a data-analytics background (SQL, Python, Power BI, Tableau) and now designs end-to-end automations with n8n, Make.com, LLMs, Supabase, Trigger.dev and Smartlead.
+
+## What he does
+- AI automation & integration: connecting tools, orchestrating processes, and using LLMs for repetitive, judgement-light work.
+- GTM engineering: sourcing, enrichment, AI personalization, deliverability, and reply handling, built as observable infrastructure.
+
+## Key pages
+- Home: https://olajide.dev/
+- AI Automation & Integration: https://olajide.dev/automation
+- GTM Engineering: https://olajide.dev/gtm
+- Work (case studies & builds): https://olajide.dev/work
+- About: https://olajide.dev/about
+- Contact: https://olajide.dev/contact
+
+## Selected work
+- AI Content Pipeline — one idea in, SEO-ready posts on every platform out (n8n, OpenAI, DALL·E, Airtable).
+- AI Proposal Generation & Delivery — discovery-call notes become a sent, on-brand proposal, human-in-the-loop.
+- AI Lead Generation & Outreach Engine — a description of your buyer becomes a queue of ready-to-send, verified outreach.
+- The Outbound Engine — turn a description of your buyer into booked conversations.
+- Signal-Based Targeting — reach buyers the week they actually start looking.
+
+## Contact
+- Email: stanleyajao123@gmail.com
+- GitHub: https://github.com/Stanley00011
+- LinkedIn: https://www.linkedin.com/in/olajide-ajao/
+
+## Keywords
+AI GTM engineer, GTM engineer, GTM engineering, go-to-market engineer, AI automation, AI automation engineer, workflow automation, n8n developer, LLM automation, outbound automation, lead generation automation, go-to-market systems.
