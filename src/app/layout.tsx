@@ -59,6 +59,9 @@ export const metadata: Metadata = {
     title: `${site.name} - ${site.role}`,
     description: site.tagline,
   },
+  verification: {
+    google: "canDuupbkPjjeyVY3WMEAfDWmFHpa1N-xWcMsTD34W8",
+  },
 };
 
 export default function RootLayout({
