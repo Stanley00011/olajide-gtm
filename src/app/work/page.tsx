@@ -5,7 +5,7 @@ import { WorkGrid } from "./WorkGrid";
 export const metadata: Metadata = {
   title: "Work",
   description:
-    "Selected AI automation and GTM engineering systems — with the problem, the build, and the outcome for each.",
+    "Selected AI automation and GTM engineering systems, with the problem, the build, and the outcome for each.",
 };
 
 export default function WorkPage() {
@@ -19,7 +19,7 @@ export default function WorkPage() {
             <span className="text-gradient">heavy lifting</span>.
           </>
         }
-        intro="A selection of automation and GTM systems. Each one started as manual, repetitive work — and ended as infrastructure."
+        intro="A selection of automation and GTM systems. Each one started as manual, repetitive work, and ended as infrastructure."
       />
       <section className="container-page pb-8">
         <WorkGrid />

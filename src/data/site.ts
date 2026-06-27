@@ -1,9 +1,9 @@
-/** Global site/profile config — single source of truth for identity + nav. */
+/** Global site/profile config, single source of truth for identity + nav. */
 
 /**
  * Canonical site URL. Resolves automatically:
  *  1. NEXT_PUBLIC_SITE_URL (set this in Vercel once you have a custom domain)
- *  2. Vercel's production URL (auto-set on Vercel — correct on the *.vercel.app deploy)
+ *  2. Vercel's production URL (auto-set on Vercel, correct on the *.vercel.app deploy)
  *  3. local fallback
  */
 const SITE_URL =
@@ -39,7 +39,7 @@ export const nav: { label: string; href: string }[] = [
   { label: "Contact", href: "/contact" },
 ];
 
-/** Tools / platforms — used for the marquee + skills strip. */
+/** Tools / platforms, used for the marquee + skills strip. */
 export const stack: string[] = [
   "n8n",
   "Make.com",

@@ -12,7 +12,7 @@ import { CTA } from "@/components/sections/CTA";
 export const metadata: Metadata = {
   title: "GTM Engineering",
   description:
-    "Go-to-market as engineered infrastructure: sourcing, enrichment, AI personalization, deliverability, and reply handling — instrumented end to end.",
+    "Go-to-market as engineered infrastructure: sourcing, enrichment, AI personalization, deliverability, and reply handling, instrumented end to end.",
   keywords: [
     "GTM engineering",
     "GTM engineer",
@@ -34,7 +34,7 @@ const process = [
   {
     step: "02",
     title: "Design the system",
-    body: "I map the whole pipeline on paper first — sources, data, messaging, sending, replies — so you can see exactly what we're building and why before a line of it exists.",
+    body: "I map the whole pipeline on paper first, sources, data, messaging, sending, replies, so you can see exactly what we're building and why before a line of it exists.",
   },
   {
     step: "03",
@@ -58,7 +58,7 @@ const stages = [
     icon: Crosshair,
     step: "01",
     title: "Target",
-    body: "Translate the ICP into queryable criteria and surface accounts showing real buying intent — not a static, decaying list.",
+    body: "Translate the ICP into queryable criteria and surface accounts showing real buying intent, not a static, decaying list.",
   },
   {
     icon: Sparkles,
@@ -76,7 +76,7 @@ const stages = [
     icon: MessagesSquare,
     step: "04",
     title: "Convert",
-    body: "An AI response layer triages replies and routes the qualified ones to a human fast — so momentum never stalls.",
+    body: "An AI response layer triages replies and routes the qualified ones to a human fast, so momentum never stalls.",
   },
 ];
 
@@ -84,14 +84,14 @@ export default function GtmPage() {
   return (
     <>
       <PageHeader
-        kicker="Discipline 02 — GTM Engineering"
+        kicker="Discipline 02, GTM Engineering"
         title={
           <>
             Go-to-market is a <span className="text-gradient">system</span>, not a
             headcount problem.
           </>
         }
-        intro="I treat outbound as engineered infrastructure: sourcing, enrichment, AI personalization, deliverability, and reply handling — wired together and instrumented so pipeline compounds instead of leaking."
+        intro="I treat outbound as engineered infrastructure: sourcing, enrichment, AI personalization, deliverability, and reply handling, wired together and instrumented so pipeline compounds instead of leaking."
       />
 
       {/* Pipeline as funnel of stages */}
@@ -130,7 +130,7 @@ export default function GtmPage() {
               <span className="text-gradient">booked conversation</span>.
             </>
           }
-          intro="This is the shape of an outbound engine. Every box is a step I build and connect — so nothing is left to a person remembering to do it."
+          intro="This is the shape of an outbound engine. Every box is a step I build and connect, so nothing is left to a person remembering to do it."
         />
         <Reveal className="mt-12">
           <div className="relative h-auto overflow-hidden rounded-[var(--radius)] border border-border bg-surface/30 md:h-[460px]">
@@ -156,7 +156,7 @@ export default function GtmPage() {
               not hope.
             </>
           }
-          intro="When every stage is instrumented, you stop guessing. You see where leads drop, which copy converts, and which inboxes are healthy — and you fix the system, not the symptom."
+          intro="When every stage is instrumented, you stop guessing. You see where leads drop, which copy converts, and which inboxes are healthy, and you fix the system, not the symptom."
         />
         <div className="mt-12 grid gap-6 sm:grid-cols-3">
           {[

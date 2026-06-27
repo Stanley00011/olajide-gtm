@@ -92,7 +92,7 @@ export default async function CaseStudy({
                   <div className="aspect-video">
                     <iframe
                       src={toLoomEmbed(project.demoUrl)}
-                      title={`${project.title} — demo`}
+                      title={`${project.title} - demo`}
                       allowFullScreen
                       loading="lazy"
                       className="size-full"

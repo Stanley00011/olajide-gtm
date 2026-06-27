@@ -14,7 +14,7 @@ export function WorkflowSection() {
               Not slides. <span className="text-gradient">Running systems.</span>
             </>
           }
-          intro="Every engagement becomes a pipeline like this — triggered, enriched, reasoned over by AI, gated by a human, and observable end to end."
+          intro="Every engagement becomes a pipeline like this, triggered, enriched, reasoned over by AI, gated by a human, and observable end to end."
         />
       </div>
 

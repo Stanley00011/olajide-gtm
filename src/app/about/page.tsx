@@ -8,29 +8,29 @@ import { stack } from "@/data/site";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "From data analyst to AI GTM engineer — the story, the stack, and what comes next.",
+    "From data analyst to AI GTM engineer, the story, the stack, and what comes next.",
 };
 
 const timeline = [
   {
     year: "Foundations",
     title: "Data analytics",
-    body: "Started in data — SQL, Python, Power BI, Tableau, AWS. Built dashboards and models that turned raw, messy data into decisions teams could act on.",
+    body: "Started in data: SQL, Python, Power BI, Tableau, AWS. Built dashboards and models that turned raw, messy data into decisions teams could act on.",
   },
   {
     year: "The realization",
     title: "Insight wasn't enough",
-    body: "The bottleneck was rarely the analysis — it was the manual work after it. So I learned to build the systems that act on the insight, not just surface it.",
+    body: "The bottleneck was rarely the analysis, it was the manual work after it. So I learned to build the systems that act on the insight, not just surface it.",
   },
   {
     year: "Automation program",
     title: "A scrappy Notion site got me the job",
-    body: "During an intensive automation program I built a simple — honestly, ugly — Notion portfolio. It worked because the systems behind it were real. Substance over polish.",
+    body: "During an intensive automation program I built a simple (and, honestly, ugly) Notion portfolio. It worked because the systems behind it were real. Substance over polish.",
   },
   {
     year: "Now",
     title: "AI GTM Engineer",
-    body: "Today I engineer go-to-market systems: sourcing, enrichment, AI personalization, deliverability, and reply handling — automation pointed squarely at revenue.",
+    body: "Today I engineer go-to-market systems: sourcing, enrichment, AI personalization, deliverability, and reply handling. Automation pointed squarely at revenue.",
   },
 ];
 
@@ -53,8 +53,8 @@ export default function AboutPage() {
           <Reveal>
             <p>
               My approach starts with the business need, not the tool. I figure
-              out where time leaks — the copy-paste, the manual research, the
-              report nobody has time to build — and design an automation that
+              out where time leaks: the copy-paste, the manual research, the
+              report nobody has time to build. Then I design an automation that
               quietly removes it.
             </p>
           </Reveal>

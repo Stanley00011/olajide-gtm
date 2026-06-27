@@ -19,7 +19,7 @@ import { CTA } from "@/components/sections/CTA";
 export const metadata: Metadata = {
   title: "AI Automation & Integration",
   description:
-    "End-to-end AI automations that connect tools, orchestrate processes, and remove repetitive work — reliable, scalable, and cost-conscious.",
+    "End-to-end AI automations that connect tools, orchestrate processes, and remove repetitive work, reliable, scalable, and cost-conscious.",
   keywords: [
     "AI automation",
     "AI automation engineer",
@@ -36,12 +36,12 @@ const capabilities = [
   {
     icon: Workflow,
     title: "Workflow orchestration",
-    body: "Multi-step automations in n8n and Make that connect your stack and run unattended — with retries, error handling, and observability built in.",
+    body: "Multi-step automations in n8n and Make that connect your stack and run unattended, with retries, error handling, and observability built in.",
   },
   {
     icon: Bot,
     title: "LLM & agent pipelines",
-    body: "AI that drafts, classifies, extracts, and decides — grounded in your data, with a human gate wherever judgement matters.",
+    body: "AI that drafts, classifies, extracts, and decides, grounded in your data, with a human gate wherever judgement matters.",
   },
   {
     icon: Plug,
@@ -51,7 +51,7 @@ const capabilities = [
   {
     icon: Database,
     title: "Data layer",
-    body: "Structured storage and review surfaces — Supabase, Airtable, sheets — so every run is logged, auditable, and human-reviewable.",
+    body: "Structured storage and review surfaces (Supabase, Airtable, sheets) so every run is logged, auditable, and human-reviewable.",
   },
   {
     icon: ShieldCheck,
@@ -69,14 +69,14 @@ export default function AutomationPage() {
   return (
     <>
       <PageHeader
-        kicker="Discipline 01 — AI Automation & Integration"
+        kicker="Discipline 01, AI Automation & Integration"
         title={
           <>
             Turn manual, repetitive work into{" "}
             <span className="text-gradient">systems that run themselves</span>.
           </>
         }
-        intro="I design practical, end-to-end automations that connect tools, orchestrate processes, and use AI for the judgement-light work — built to be efficient, scalable, and reliable."
+        intro="I design practical, end-to-end automations that connect tools, orchestrate processes, and use AI for the judgement-light work, built to be efficient, scalable, and reliable."
       />
 
       {/* Interactive canvas centerpiece */}
@@ -100,7 +100,7 @@ export default function AutomationPage() {
         <SectionHeading
           kicker="What I build"
           title="The building blocks"
-          intro="Every automation is assembled from these — composed to fit the exact shape of your process."
+          intro="Every automation is assembled from these, composed to fit the exact shape of your process."
         />
         <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {capabilities.map((c, i) => (

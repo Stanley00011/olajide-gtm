@@ -4,7 +4,7 @@
  * `automation` projects are sourced from Olajide's real automation portfolio
  * (descriptions, stacks, demo videos and write-ups pulled from his Notion).
  * `gtm` projects are detailed, representative case studies of the kind of
- * go-to-market systems he engineers — metrics flagged with `metricsNote` are
+ * go-to-market systems he engineers, metrics flagged with `metricsNote` are
  * illustrative pending real client figures.
  */
 
@@ -27,14 +27,14 @@ export type Project = {
   overview: string;
   /** The business pain that justified building the system. */
   problem: string;
-  /** Ordered build steps — also drives the case-study flow diagram. */
+  /** Ordered build steps, also drives the case-study flow diagram. */
   approach: Step[];
   /** The result narrative. */
   outcome: string;
   metrics: Metric[];
   metricsNote?: string;
   stack: string[];
-  /** Optional Loom share URL — rendered as an embedded demo. */
+  /** Optional Loom share URL, rendered as an embedded demo. */
   demoUrl?: string;
   /** Optional public write-up / doc. */
   docUrl?: string;
@@ -50,14 +50,14 @@ export const projects: Project[] = [
     year: "2025",
     featured: true,
     overview:
-      "An automated content engine. A manager drops in a raw idea or a link through a simple web form; the system writes three SEO-optimized drafts, reshapes the chosen one for LinkedIn, X, and an email newsletter, generates matching images, and publishes or schedules everything — logging every step so nothing happens in the dark.",
+      "An automated content engine. A manager drops in a raw idea or a link through a simple web form; the system writes three SEO-optimized drafts, reshapes the chosen one for LinkedIn, X, and an email newsletter, generates matching images, and publishes or schedules everything, logging every step so nothing happens in the dark.",
     problem:
-      "The content team did everything by hand: research, drafting, reformatting for each platform, then publishing. It was slow, the voice drifted between posts, and it simply couldn't keep up — so things shipped late, or wrong, or twice.",
+      "The content team did everything by hand: research, drafting, reformatting for each platform, then publishing. It was slow, the voice drifted between posts, and it simply couldn't keep up, so things shipped late, or wrong, or twice.",
     approach: [
       {
         title: "Capture the idea",
         detail:
-          "A manager submits a raw idea or a URL through a clean web interface — no logins to five tools, no copy-paste.",
+          "A manager submits a raw idea or a URL through a clean web interface, no logins to five tools, no copy-paste.",
       },
       {
         title: "Draft three angles with AI",
@@ -67,7 +67,7 @@ export const projects: Project[] = [
       {
         title: "Reshape per platform",
         detail:
-          "The chosen draft is rewritten for each channel — PAS copywriting for LinkedIn, a tight 280 characters for X, a 250–600 word newsletter.",
+          "The chosen draft is rewritten for each channel, PAS copywriting for LinkedIn, a tight 280 characters for X, a 250–600 word newsletter.",
       },
       {
         title: "Generate the visuals",
@@ -81,7 +81,7 @@ export const projects: Project[] = [
       },
     ],
     outcome:
-      "What used to eat hours now takes under five minutes of a manager's attention. The system became the content team's quiet third member — consistent, on-brand, and impossible to forget a step.",
+      "What used to eat hours now takes under five minutes of a manager's attention. The system became the content team's quiet third member, consistent, on-brand, and impossible to forget a step.",
     metrics: [
       { value: "<5 min", label: "of manager input per post" },
       { value: "100%", label: "of posts met SEO requirements" },
@@ -108,7 +108,7 @@ export const projects: Project[] = [
     year: "2025",
     featured: true,
     overview:
-      "A human-in-the-loop proposal machine. Sales drops their discovery notes into a form; AI drafts the proposal; a manager reviews and approves; the system turns it into a branded PDF, shares it with the client, and files everything — all without anyone formatting a document by hand.",
+      "A human-in-the-loop proposal machine. Sales drops their discovery notes into a form; AI drafts the proposal; a manager reviews and approves; the system turns it into a branded PDF, shares it with the client, and files everything, all without anyone formatting a document by hand.",
     problem:
       "Writing proposals after a call took hours, and every rep did it slightly differently. The lag let deals go cold, and inconsistent formatting made a sharp team look unsure of itself.",
     approach: [
@@ -125,7 +125,7 @@ export const projects: Project[] = [
       {
         title: "Keep a human in the loop",
         detail:
-          "Managers get an automated email with links to review and approve in Google Docs and Airtable — control stays with the team.",
+          "Managers get an automated email with links to review and approve in Google Docs and Airtable, control stays with the team.",
       },
       {
         title: "Finalize and deliver",
@@ -160,7 +160,7 @@ export const projects: Project[] = [
     year: "2025",
     featured: true,
     overview:
-      "Give the system a description of who you want to reach, and it finds matching companies and people, fills in the details that make a message land, checks that the emails are real, and writes personalized cold emails and LinkedIn notes for each one — all stacked neatly in Airtable for a human to approve before anything sends.",
+      "Give the system a description of who you want to reach, and it finds matching companies and people, fills in the details that make a message land, checks that the emails are real, and writes personalized cold emails and LinkedIn notes for each one, all stacked neatly in Airtable for a human to approve before anything sends.",
     problem:
       "Finding leads was entirely manual: define the persona, research companies one by one, hunt for emails, then write every message from scratch. It didn't scale, and the quality quietly dropped as the person doing it got tired.",
     approach: [
@@ -182,16 +182,16 @@ export const projects: Project[] = [
       {
         title: "Personalize at scale",
         detail:
-          "AI writes a tailored cold-email sequence and LinkedIn message for each lead — one-to-one quality, done in bulk.",
+          "AI writes a tailored cold-email sequence and LinkedIn message for each lead, one-to-one quality, done in bulk.",
       },
       {
         title: "Hand off for review",
         detail:
-          "Everything lands in Airtable so a human approves what ships — speed without losing control of the message.",
+          "Everything lands in Airtable so a human approves what ships, speed without losing control of the message.",
       },
     ],
     outcome:
-      "Days of manual research collapse into a single automated run that produces validated, personalized, ready-to-review outreach — with a person still deciding what actually goes out.",
+      "Days of manual research collapse into a single automated run that produces validated, personalized, ready-to-review outreach, with a person still deciding what actually goes out.",
     metrics: [
       { value: "90%+", label: "less manual research time" },
       { value: "100%", label: "of emails validated pre-send" },
@@ -207,7 +207,7 @@ export const projects: Project[] = [
     tagline: "Three departments of scattered data, one live executive view.",
     year: "2025",
     overview:
-      "A reporting system that pulls numbers from Sales, Project Delivery, and People Ops, reconciles them, calculates the KPIs the same way every time, and assembles a single executive dashboard that's always current — no more morning spent stitching spreadsheets together.",
+      "A reporting system that pulls numbers from Sales, Project Delivery, and People Ops, reconciles them, calculates the KPIs the same way every time, and assembles a single executive dashboard that's always current, no more morning spent stitching spreadsheets together.",
     problem:
       "Cross-department reporting meant hours of gathering data from different tools by hand. By the time the report existed it was often wrong, and always a little out of date.",
     approach: [
@@ -233,7 +233,7 @@ export const projects: Project[] = [
       },
     ],
     outcome:
-      "A reliable dashboard that unifies three departments and delivers an accurate executive view in under a minute — replacing hours of fragile manual assembly.",
+      "A reliable dashboard that unifies three departments and delivers an accurate executive view in under a minute, replacing hours of fragile manual assembly.",
     metrics: [
       { value: "<60s", label: "to a full executive view" },
       { value: "3", label: "departments unified" },
@@ -250,14 +250,14 @@ export const projects: Project[] = [
     tagline: "Invoices land in the inbox and quietly file themselves.",
     year: "2025",
     overview:
-      "An automation that watches the invoice inbox, reads each incoming invoice, pulls out the details, logs them accurately, and flags anything odd for a human — so the admin team stops doing data entry and the books stay clean and auditable.",
+      "An automation that watches the invoice inbox, reads each incoming invoice, pulls out the details, logs them accurately, and flags anything odd for a human, so the admin team stops doing data entry and the books stay clean and auditable.",
     problem:
       "Novus Realty's admin team logged dozens of invoices a week into a spreadsheet by hand. It was slow, easy to get wrong, and it kept capable people busy with work no one should be doing.",
     approach: [
       {
         title: "Watch the inbox",
         detail:
-          "New invoices trigger the workflow the moment they arrive — nothing waits in a pile.",
+          "New invoices trigger the workflow the moment they arrive, nothing waits in a pile.",
       },
       {
         title: "Read each invoice",
@@ -272,7 +272,7 @@ export const projects: Project[] = [
       {
         title: "Flag the exceptions",
         detail:
-          "Anything unusual is surfaced for human review instead of failing silently — accuracy without blind trust.",
+          "Anything unusual is surfaced for human review instead of failing silently, accuracy without blind trust.",
       },
     ],
     outcome:
@@ -297,12 +297,12 @@ export const projects: Project[] = [
     overview:
       "Most companies do outbound by hiring people to send more emails. I build the machine instead: a system that knows who to reach, writes to each person like a human who did their homework, sends from inboxes that actually reach the inbox, and makes sure no reply ever gets missed. Your team stops doing busywork and starts talking to interested buyers.",
     problem:
-      "Cold outreach has a quiet failure mode — it can look busy while achieving nothing. Lists go stale the week you buy them. Generic 'Hi {firstName}' emails get deleted on sight. Sending too fast from cold inboxes lands you in spam, where no one ever sees you. And the few people who do reply slip through the cracks because everyone's heads-down sending the next batch. More effort doesn't fix any of this. Better plumbing does.",
+      "Cold outreach has a quiet failure mode, it can look busy while achieving nothing. Lists go stale the week you buy them. Generic 'Hi {firstName}' emails get deleted on sight. Sending too fast from cold inboxes lands you in spam, where no one ever sees you. And the few people who do reply slip through the cracks because everyone's heads-down sending the next batch. More effort doesn't fix any of this. Better plumbing does.",
     approach: [
       {
         title: "Start with who, not how many",
         detail:
-          "I translate your ideal customer into something the system can actually go find — so we reach the right 500 people, not a random 50,000.",
+          "I translate your ideal customer into something the system can actually go find, so we reach the right 500 people, not a random 50,000.",
       },
       {
         title: "Build a list that's actually real",
@@ -312,7 +312,7 @@ export const projects: Project[] = [
       {
         title: "Let AI do the homework",
         detail:
-          "Each message is personalized from real, specific signals about that person and company — the kind of line that makes someone think 'this wasn't a blast'.",
+          "Each message is personalized from real, specific signals about that person and company, the kind of line that makes someone think 'this wasn't a blast'.",
       },
       {
         title: "Send like a human, not a cannon",
@@ -322,16 +322,16 @@ export const projects: Project[] = [
       {
         title: "Catch every reply",
         detail:
-          "An AI layer reads incoming replies, sorts the interested from the not, and routes the good ones to a human fast — momentum never leaks.",
+          "An AI layer reads incoming replies, sorts the interested from the not, and routes the good ones to a human fast, momentum never leaks.",
       },
       {
         title: "Watch it like a system",
         detail:
-          "Every stage is measured, so when something dips we fix the actual cause instead of guessing — the engine gets sharper over time.",
+          "Every stage is measured, so when something dips we fix the actual cause instead of guessing, the engine gets sharper over time.",
       },
     ],
     outcome:
-      "Instead of a team grinding through spreadsheets, you get a pipeline you can see end to end — where quality is enforced by the system, not by whoever's having a good day. The people on your side spend their time on real conversations, and the machine handles everything before and after them.",
+      "Instead of a team grinding through spreadsheets, you get a pipeline you can see end to end, where quality is enforced by the system, not by whoever's having a good day. The people on your side spend their time on real conversations, and the machine handles everything before and after them.",
     metrics: [
       { value: "Right 500", label: "not a random 50,000" },
       { value: "Inbox", label: "not the spam folder" },
@@ -356,14 +356,14 @@ export const projects: Project[] = [
     year: "2026",
     featured: true,
     overview:
-      "Timing is the part of outreach nobody talks about. The same email that gets ignored in March gets a reply in June — because in June the company just started hiring for the problem you solve. This system watches for those moments across the market and reaches out while the window is open, with a message that names the exact reason you're writing.",
+      "Timing is the part of outreach nobody talks about. The same email that gets ignored in March gets a reply in June, because in June the company just started hiring for the problem you solve. This system watches for those moments across the market and reaches out while the window is open, with a message that names the exact reason you're writing.",
     problem:
-      "Blasting one big list treats a company that's urgently shopping the same as one that couldn't care less. But the buying moment is real and it's short: a company starts running ads, posts a telling job, or adopts a tool that signals intent — and then the moment passes. Those signals are scattered across the internet and they go stale in days. Miss the window and you're just noise; catch it and you're the right message at the right time.",
+      "Blasting one big list treats a company that's urgently shopping the same as one that couldn't care less. But the buying moment is real and it's short: a company starts running ads, posts a telling job, or adopts a tool that signals intent, and then the moment passes. Those signals are scattered across the internet and they go stale in days. Miss the window and you're just noise; catch it and you're the right message at the right time.",
     approach: [
       {
         title: "Watch for the moment",
         detail:
-          "The system tracks real buying signals — companies running ads, hiring for a role, or adopting a technology that means they're in-market now.",
+          "The system tracks real buying signals, companies running ads, hiring for a role, or adopting a technology that means they're in-market now.",
       },
       {
         title: "Connect the signal to a person",
@@ -378,7 +378,7 @@ export const projects: Project[] = [
       {
         title: "Reference the real reason",
         detail:
-          "The message names the actual trigger — 'saw you're hiring for X' — which is why it reads as relevant instead of random.",
+          "The message names the actual trigger, 'saw you're hiring for X', which is why it reads as relevant instead of random.",
       },
       {
         title: "Learn and re-aim",
@@ -387,7 +387,7 @@ export const projects: Project[] = [
       },
     ],
     outcome:
-      "Outreach that arrives when a company is actually looking, about the thing they're actually dealing with. You don't need a bigger list — you need to reach a smaller one at the right moment, and that's what moves reply rates.",
+      "Outreach that arrives when a company is actually looking, about the thing they're actually dealing with. You don't need a bigger list, you need to reach a smaller one at the right moment, and that's what moves reply rates.",
     metrics: [
       { value: "In-market", label: "timing, not spray-and-pray" },
       { value: "The reason", label: "named in every message" },
@@ -403,14 +403,14 @@ export const projects: Project[] = [
     tagline: "Turn a vague 'our ideal customer' into a verified, qualified list.",
     year: "2026",
     overview:
-      "Every outbound campaign lives or dies on the list. This is the system that turns a fuzzy description of your buyer into a clean, verified, qualified list of real people — pulling from multiple sources, filling the gaps each one leaves, and checking every email before it ever gets used.",
+      "Every outbound campaign lives or dies on the list. This is the system that turns a fuzzy description of your buyer into a clean, verified, qualified list of real people, pulling from multiple sources, filling the gaps each one leaves, and checking every email before it ever gets used.",
     problem:
       "Bought lists are full of dead ends: wrong titles, missing emails, people who left two years ago. Send to that and you torch your sender reputation and waste the campaign before the copy even matters. No single data source is complete either, so relying on one leaves most of your real buyers invisible.",
     approach: [
       {
         title: "Pin down who actually qualifies",
         detail:
-          "The ideal-customer profile is turned into concrete, checkable rules — industry, size, role, signals — so 'good fit' stops being a vibe.",
+          "The ideal-customer profile is turned into concrete, checkable rules, industry, size, role, signals, so 'good fit' stops being a vibe.",
       },
       {
         title: "Pull from several sources",
@@ -420,7 +420,7 @@ export const projects: Project[] = [
       {
         title: "Fill the gaps with a waterfall",
         detail:
-          "Each missing email is attempted through providers in cost order — cheap first, premium only when needed — so coverage goes up and spend stays sane.",
+          "Each missing email is attempted through providers in cost order, cheap first, premium only when needed, so coverage goes up and spend stays sane.",
       },
       {
         title: "Verify before it counts",
@@ -434,7 +434,7 @@ export const projects: Project[] = [
       },
     ],
     outcome:
-      "A list you can actually trust — more real buyers found, dead addresses removed before they cost you, and a clear paper trail of why each person made the cut.",
+      "A list you can actually trust, more real buyers found, dead addresses removed before they cost you, and a clear paper trail of why each person made the cut.",
     metrics: [
       { value: "Multi-source", label: "coverage, not one database" },
       { value: "Cost-ordered", label: "enrichment, no wasted spend" },
@@ -452,7 +452,7 @@ export const projects: Project[] = [
     overview:
       "The best email in the world earns nothing from the spam folder. This is the infrastructure that keeps you in the inbox: dedicated sending domains, mailboxes warmed up properly, sane sending limits, rotation across many inboxes, and health checks that catch trouble before it spreads.",
     problem:
-      "Most outbound quietly dies in spam. Send too much too fast from a cold domain and inbox providers flag you — after that, even your warmest leads never see a thing, and you have no idea why your 'great campaign' got silence. Deliverability is invisible until it's the only thing that matters.",
+      "Most outbound quietly dies in spam. Send too much too fast from a cold domain and inbox providers flag you, after that, even your warmest leads never see a thing, and you have no idea why your 'great campaign' got silence. Deliverability is invisible until it's the only thing that matters.",
     approach: [
       {
         title: "Separate your reputation from the main domain",
@@ -497,9 +497,9 @@ export const projects: Project[] = [
     tagline: "Every reply read, sorted, and routed in seconds, not days.",
     year: "2026",
     overview:
-      "Getting replies is the goal — and the moment most teams drop the ball. This system reads every incoming reply, works out what the person actually means, and routes the hot ones to a human immediately, with a suggested response ready to go. Nothing interested ever sits unread.",
+      "Getting replies is the goal, and the moment most teams drop the ball. This system reads every incoming reply, works out what the person actually means, and routes the hot ones to a human immediately, with a suggested response ready to go. Nothing interested ever sits unread.",
     problem:
-      "When outreach works, replies arrive faster than anyone can keep up. Interested buyers get buried under out-of-offices and 'not interested' notes, and by the time someone reads them, the moment has passed. The cost of a slow reply isn't a lost email — it's a lost deal.",
+      "When outreach works, replies arrive faster than anyone can keep up. Interested buyers get buried under out-of-offices and 'not interested' notes, and by the time someone reads them, the moment has passed. The cost of a slow reply isn't a lost email, it's a lost deal.",
     approach: [
       {
         title: "Read every reply automatically",
@@ -509,7 +509,7 @@ export const projects: Project[] = [
       {
         title: "Understand the intent",
         detail:
-          "AI classifies each reply — interested, question, objection, referral, not now, unsubscribe — instead of treating them all the same.",
+          "AI classifies each reply, interested, question, objection, referral, not now, unsubscribe, instead of treating them all the same.",
       },
       {
         title: "Route by urgency",

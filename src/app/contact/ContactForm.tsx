@@ -17,7 +17,7 @@ export function ContactForm() {
     e.preventDefault();
     const subject = encodeURIComponent(`New inquiry from ${name || "the site"}`);
     const body = encodeURIComponent(
-      `${message}\n\n— ${name}${email ? ` (${email})` : ""}`,
+      `${message}\n\n- ${name}${email ? ` (${email})` : ""}`,
     );
     window.location.href = `mailto:${site.email}?subject=${subject}&body=${body}`;
   }

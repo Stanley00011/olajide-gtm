@@ -195,6 +195,19 @@ html.lenis body {
   from { transform: translateX(0); }
   to { transform: translateX(-100%); }
 }
+/* Ambient background motion (works on mobile; cheap GPU transforms) */
+@keyframes grid-pan {
+  from { background-position: 0 0, 0 0; }
+  to { background-position: 64px 64px, 64px 64px; }
+}
+@keyframes drift-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(44px, -34px) scale(1.1); }
+}
+@keyframes drift-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-38px, 30px) scale(1.07); }
+}
 
 .anim-float {
   animation: float-y 6s ease-in-out infinite;

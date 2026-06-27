@@ -19,7 +19,7 @@ export function CTA() {
             </h2>
             <p className="mx-auto mt-5 max-w-xl text-fg-muted sm:text-lg">
               Tell me where the manual work lives. I&apos;ll show you the system
-              that removes it — and the pipeline it unlocks.
+              that removes it, and the pipeline it unlocks.
             </p>
             <div className="mt-9 flex flex-wrap justify-center gap-3">
               <Button href="/contact" size="lg">

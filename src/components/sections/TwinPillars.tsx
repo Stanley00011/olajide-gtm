@@ -9,7 +9,7 @@ const pillars = [
     icon: Workflow,
     label: "Discipline 01",
     title: "AI Automation & Integration",
-    body: "End-to-end systems that connect tools, orchestrate processes, and let AI handle the repetitive work — reliable, scalable, and cost-conscious by design.",
+    body: "End-to-end systems that connect tools, orchestrate processes, and let AI handle the repetitive work, reliable, scalable, and cost-conscious by design.",
     points: ["n8n & Make orchestration", "LLM & agent pipelines", "API & data integration"],
   },
   {
@@ -17,7 +17,7 @@ const pillars = [
     icon: Target,
     label: "Discipline 02",
     title: "GTM Engineering",
-    body: "Go-to-market treated as a system: sourcing, enrichment, AI personalization, deliverability, and reply handling — instrumented end to end so pipeline compounds.",
+    body: "Go-to-market treated as a system: sourcing, enrichment, AI personalization, deliverability, and reply handling, instrumented end to end so pipeline compounds.",
     points: ["Outbound engines", "Signal-based targeting", "AI reply triage"],
   },
 ];
@@ -33,7 +33,7 @@ export function TwinPillars() {
             <span className="text-gradient">intent and revenue</span>.
           </>
         }
-        intro="The work splits into two tightly-coupled disciplines. Explore each — they feed each other."
+        intro="The work splits into two tightly-coupled disciplines. Explore each, they feed each other."
       />
 
       <div className="mt-14 grid gap-5 md:grid-cols-2">
