@@ -74,6 +74,12 @@ export default function RootLayout({
       className={`${sans.variable} ${display.variable} ${mono.variable}`}
     >
       <body className="min-h-dvh bg-bg text-fg">
+        {/* Pre-paint: if the intro already ran this session, hide it before render. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `try{if(sessionStorage.getItem('intro-seen'))document.documentElement.classList.add('intro-seen')}catch(e){}`,
+          }}
+        />
         <JsonLd />
         <ThemeProvider>
           <IntroLoader />

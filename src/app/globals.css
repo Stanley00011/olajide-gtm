@@ -200,16 +200,19 @@ html.lenis body {
   animation: float-y 6s ease-in-out infinite;
 }
 
-/* Respect reduced-motion globally as a safety net */
+/* Reduced-motion: tame jumpy scroll, but KEEP the gentle ambient brand loops
+   (marquee, background float). Heavy entrance/scroll/3D motion is gated per
+   component in JS via useReducedMotion(). */
 @media (prefers-reduced-motion: reduce) {
-  *,
-  *::before,
-  *::after {
-    animation-duration: 0.001ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.001ms !important;
-    scroll-behavior: auto !important;
+  html {
+    scroll-behavior: auto;
   }
+}
+
+/* Intro overlay is hidden before paint on repeat visits (class set by an inline
+   script in <head>) so there's no flash of the loader after the first load. */
+html.intro-seen #intro-overlay {
+  display: none !important;
 }
 
 /* Focus visibility */
